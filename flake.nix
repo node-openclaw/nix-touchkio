@@ -10,7 +10,7 @@
     mkTouchkio = system: let
       pkgs = import nixpkgs { inherit system; };
       archMap = {
-        "x86_64-linux" = { arch = "x64"; hash = "sha256-AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA="; };
+        "x86_64-linux" = { arch = "x64"; hash = "sha256-9x3BehMA7j6V3Wy4CdsMIz4isn9PNILgTuFLuCfszPo="; };
         "aarch64-linux" = { arch = "arm64"; hash = "sha256-Jkdv/KcKxdc3uKa9K7ypp5eZUGR55e1PR6Ya3w7n/cU="; };
       };
       archInfo = archMap.${system};
