@@ -56,7 +56,7 @@
 
       installPhase = ''
         mkdir -p $out/opt/touchkio $out/bin
-        cp -r source/* $out/opt/touchkio/
+        cp -r source/touchkio-linux-${archInfo.arch}/* $out/opt/touchkio/
         chmod +x $out/opt/touchkio/touchkio
 
         makeWrapper $out/opt/touchkio/touchkio $out/bin/touchkio \
